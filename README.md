@@ -1,14 +1,112 @@
-# Vendor-Profitability-Sales-Analysis-and-Reporting-Dashboard-
-Built an end-to-end Vendor Performance Analysis pipeline using SQL, Python  and Power BI with detailed logging; integrated 5 CSV files into a unified database combining purchase, sales, and freight data for performance tracking.   Executed optimized SQL queries with CTEs and joins, automated data cleaning, and applied statistical tests.
+# 🧾 Vendor Performance Data Analytics Project
 
-Designed and implemented an end-to-end Vendor Performance Analysis pipeline integrating SQL, Python (Pandas, SQLite3), and Power BI to evaluate vendor profitability and sales efficiency.
+## 📊 Overview
+This project presents an **end-to-end Vendor Performance Analysis pipeline** that integrates **SQL, Python (Pandas, SQLite3, Statsmodels)**, and **Power BI** to evaluate vendor profitability, sales efficiency, and pricing behavior.  
+The objective was to **analyze vendor performance**, identify **profitability drivers**, and perform **statistical testing** to determine if there are significant differences in profit margins among vendors.
 
-Wrote optimized SQL queries with CTEs and joins to aggregate large-scale purchase, sales, and freight data into a consolidated Vendor_Sales_Summary table, improving data retrieval time by 40% for reporting.
+---
 
-Automated data cleaning and preprocessing in Python — handled missing values, validated data integrity, and standardized vendor-brand mappings for accurate analytics.
+## ⚙️ Tools & Technologies Used
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| **Database** | SQLite3 |
+| **Data Manipulation & Analysis** | Python, Pandas, NumPy |
+| **Statistical Analysis** | SciPy (`ttest_ind`), Statsmodels (`confidence intervals`, hypothesis testing) |
+| **Data Visualization** | Matplotlib, Seaborn, Power BI |
+| **SQL Queries** | Joins, CTEs, Aggregations, Subqueries |
+| **Logging & Debugging** | Python `logging` module |
+| **Environment** | Jupyter Notebook, Power BI Desktop |
 
-Conducted profitability and performance analysis by combining purchase cost, freight expenses, and sales revenue data to identify top-performing vendors and underperforming brands.
+---
 
-Developed interactive Power BI dashboards to visualize KPIs such as total purchase cost, total sales, freight contribution, and vendor-level profitability trends.
+## 🏗️ Project Workflow
+1. **Data Integration**
+   - Imported **5 CSV files** (Purchase, Sales, Freight, Vendor, and Inventory data).
+   - Created an **SQLite database** using SQLAlchemy with **logging and error handling**.
+   - Merged datasets into a unified table for vendor-level analytics.
 
-Improved decision-making by providing insights into pricing optimization and vendor selection strategies, directly supporting business profitability.
+2. **Data Transformation & Cleaning**
+   - Standardized vendor and brand mappings.
+   - Handled missing values, inconsistent data entries, and verified data integrity.
+   - Used SQL joins and aggregations to prepare the `Vendor_Sales_Summary` table.
+
+3. **Exploratory Data Analysis (EDA)**
+   - Visualized purchase contribution by top 10 vendors using **donut and bar charts**.
+   - Analyzed bulk purchase impact on unit price through **boxplots**.
+   - Evaluated capital locked in unsold inventory per vendor.
+
+4. **Statistical Analysis**
+   - Calculated **95% Confidence Intervals (CI)** for profit margins using `statsmodels`.
+   - Conducted **two-sample t-test** (`scipy.stats.ttest_ind`) to test:
+     > *Is there a significant difference in profit margins between top-performing and low-performing vendors?*
+   - Derived actionable insights for pricing optimization and vendor selection.
+
+5. **Visualization & Reporting**
+   - Designed **interactive Power BI dashboards** visualizing:
+     - Total Purchase Cost  
+     - Sales Revenue  
+     - Freight Contribution  
+     - Profit Margin by Vendor  
+   - Delivered summarized insights for strategic decision-making.
+
+---
+
+## 📈 Key Insights
+| Observation | Insight |
+|--------------|----------|
+| **Large orders have the lowest unit price (~$10.78/unit)** | Bulk purchasing yields significant cost benefits. |
+| **Price difference between small and large orders ≈ −72%** | Indicates strong incentives for vendors to buy in bulk. |
+| **Low-performing vendors have higher profit margins (40.48%–42.62%)** | Suggests premium pricing or lower operational costs. |
+| **Top-performing vendors have narrower margins (30.74%–31.61%)** | Reflects volume-based pricing strategies with thinner margins. |
+
+---
+
+## 🧮 Statistical Results
+- **Top Vendors 95% CI:** (30.74%, 31.61%)  
+- **Low Vendors 95% CI:** (40.48%, 42.62%)  
+- **Two-Sample T-Test:** p-value < 0.05 → *Significant difference in mean profit margins.*
+
+---
+
+## 📊 Power BI Dashboard Highlights
+- Vendor-wise profitability breakdown  
+- Purchase and freight cost contribution  
+- Sales efficiency by vendor and category  
+- Interactive filters for category, vendor, and date range  
+
+---
+
+## 🧠 Business Impact
+- Helped identify **cost inefficiencies and pricing gaps**.  
+- Improved **vendor selection and procurement strategy**.  
+- Enabled **data-driven decision-making** via automated reporting and visualization.
+
+---
+
+## 📂 Project Structure
+├── data/
+│ ├── purchases.csv
+│ ├── sales.csv
+│ ├── freight.csv
+│ ├── vendors.csv
+│ └── inventory.csv
+├── Code.ipynb
+├── inventory.db
+├── PowerBI_Dashboard.pbix
+└── README.md
+
+---
+
+## 🚀 Future Enhancements
+- Automate Power BI refresh using a Python scheduler.
+- Integrate predictive analytics for vendor performance forecasting.
+- Deploy dashboards to Power BI Service for real-time monitoring.
+
+---
+
+## 👨‍💻 Author
+**Sangram Patro**  
+_Data Analyst | Business Analyst | Data Science Enthusiast_  
+📧 [sangramkeshari2002@gmail.com ]  
+🌐 [LinkedIn / GitHub Profile Link]  
+
