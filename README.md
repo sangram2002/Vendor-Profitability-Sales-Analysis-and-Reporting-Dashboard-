@@ -1,0 +1,2 @@
+# Vendor-Profitability-Sales-Analysis-and-Reporting-Dashboard-
+Built an end-to-end Vendor Performance Analysis pipeline using SQL, Python  and Power BI with detailed logging; integrated 5 CSV files into a unified database combining purchase, sales, and freight data for performance tracking.   Executed optimized SQL queries with CTEs and joins, automated data cleaning, and applied statistical tests.
