@@ -83,20 +83,6 @@ The objective was to **analyze vendor performance**, identify **profitability dr
 
 ---
 
-## 📂 Project Structure
-├── data/
-│ ├── purchases.csv
-│ ├── sales.csv
-│ ├── freight.csv
-│ ├── vendors.csv
-│ └── inventory.csv
-├── Code.ipynb
-├── inventory.db
-├── PowerBI_Dashboard.pbix
-└── README.md
-
----
-
 ## 🚀 Future Enhancements
 - Automate Power BI refresh using a Python scheduler.
 - Integrate predictive analytics for vendor performance forecasting.
@@ -108,5 +94,5 @@ The objective was to **analyze vendor performance**, identify **profitability dr
 **Sangram Patro**  
 _Data Analyst | Business Analyst | Data Science Enthusiast_  
 📧 [sangramkeshari2002@gmail.com ]  
-🌐 [LinkedIn / GitHub Profile Link]  
+🌐 [https://github.com/sangram2002]  
 
