@@ -97,4 +97,6 @@ _Data Analyst | Business Analyst | Data Science Enthusiast_
 🌐 [https://github.com/sangram2002]  
 
 ## Snapshots
+Show what the dashboard looks like
+![Dashboard Preview](https://github.com/sangram2002/Vendor-Profitability-Sales-Analysis-and-Reporting-Dashboard-/blob/main/Snapshot%20of%20the%20Dashboard.png)
 
