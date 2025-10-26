@@ -1,4 +1,4 @@
-[Power BI Dashboard Link](https://app.powerbi.com/groups/me/reports/8805de3d-2336-4cf4-8e2c-eac1ee608662/f53ad9b0b1654b4e03b5?experience=power-bi)
+
 
 This is the link to view Power BI Dashboard.
 
