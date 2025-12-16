@@ -1,4 +1,4 @@
-[Power BI Dashboard Link](https://app.powerbi.com/groups/me/reports/3fd02574-06fc-494b-b57d-8dbdb17c59f5/3e32db2655a380a85b3a?experience=power-bi)
+[Power BI Dashboard Link](https://app.powerbi.com/reportEmbed?reportId=3fd02574-06fc-494b-b57d-8dbdb17c59f5&autoAuth=true&ctid=490e3e04-d2f1-4953-a433-1d90cec3d023)
 
 This is the link to view Power BI Dashboard.
 
